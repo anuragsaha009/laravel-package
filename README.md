@@ -75,7 +75,8 @@ In created composer.js, we need to tell the autoload files and add following cod
 
 Open a terminal and run: $ composer dump-autoload
 
-Inside the boot method of Service Provider add a route,migrations,views etc. in following away:
+Inside the boot method of Service Provider add a route,migrations,views etc in following away
+
 $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 $this->loadMigrationsFrom(__DIR__.'/Database/migrations');
 $this->loadViewsFrom(__DIR__.'/resources/views', 'contactform');
