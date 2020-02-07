@@ -1,0 +1,16 @@
+{
+    "name": "package/tags",
+    "description": "Package for tag management",
+    "authors": [
+        {
+            "name": "Anurag Saha",
+            "email": "anuragsaha00@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MyVendor\\tags\\": "MyVendor/tags/src/"
+        }
+    }
+}
