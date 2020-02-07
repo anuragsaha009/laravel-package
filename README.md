@@ -23,7 +23,7 @@ First follow the folder struture .
  $ composer init
 
  A composer.json file will be create that look like 
- 
+
 {
     "name": "package/tags",
     "description": "Package for tag management",
@@ -32,7 +32,9 @@ First follow the folder struture .
             "name": "Anurag Saha",
             "email": "anuragsaha00@gmail.com"
         }
-    ]
+    ],
+    "require": {}
+   
 }
 
 In created composer.js, we need to tell the autoload files and add following code to your composer.json
@@ -93,3 +95,17 @@ Route::get('tags', function(){
 });
 
 $ php artisan serve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
