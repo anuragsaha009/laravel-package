@@ -60,7 +60,7 @@ In created composer.js, we need to tell the autoload files and add following cod
             "psr-4": {
                 "MyVendor\\tags\\": "packages/MyVendor/tags/src",
                 "App\\": "app/"
-            }
+            } 
         },
         "autoload-dev": {
             "psr-4": {
