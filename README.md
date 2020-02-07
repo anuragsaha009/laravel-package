@@ -19,12 +19,10 @@ First follow the folder struture .
 
 
  At the roo of the package ,open a terminal and run
-
  $ composer init
 
- A composer.json file will be create that look like 
-
-{
+ A composer.json file will be create that look like that 
+ {
     "name": "package/tags",
     "description": "Package for tag management",
     "authors": [
@@ -32,9 +30,7 @@ First follow the folder struture .
             "name": "Anurag Saha",
             "email": "anuragsaha00@gmail.com"
         }
-    ],
-    "require": {}
-   
+    ]
 }
 
 In created composer.js, we need to tell the autoload files and add following code to your composer.json
@@ -76,10 +72,9 @@ In created composer.js, we need to tell the autoload files and add following cod
 Open a terminal and run: $ composer dump-autoload
 
 Inside the boot method of Service Provider add a route,migrations,views etc in following away
-
 $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 $this->loadMigrationsFrom(__DIR__.'/Database/migrations');
-$this->loadViewsFrom(__DIR__.'/resources/views', 'contactform');
+$this->loadViewsFrom(__DIR__.'/resources/views', 'add');
 (Note : __DIR__ refers to the current directory  )
 
 Now we need to add our newly created TagServiceProvider in our root config/app.php inside the providers array
@@ -96,17 +91,3 @@ Route::get('tags', function(){
 });
 
 $ php artisan serve
-
-
-
-
-
-
-
-
-
-
-
-
-
-
